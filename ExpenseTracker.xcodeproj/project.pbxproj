@@ -14,6 +14,7 @@
 		FC6A31D92B4D59CE00EB4B7B /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31D82B4D59CE00EB4B7B /* ExpenseTrackerTests.swift */; };
 		FC6A31E32B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31E22B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift */; };
 		FC6A31E52B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31E42B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift */; };
+		FC6A31F42B4D62DA00EB4B7B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FC6A31DE2B4D59CE00EB4B7B /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6A31E22B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		FC6A31E42B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				FC6A31C72B4D59CA00EB4B7B /* ExpenseTrackerApp.swift */,
 				FC6A31C92B4D59CA00EB4B7B /* ContentView.swift */,
+				FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */,
 				FC6A31CB2B4D59CD00EB4B7B /* Assets.xcassets */,
 				FC6A31CD2B4D59CD00EB4B7B /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				FC6A31CA2B4D59CA00EB4B7B /* ContentView.swift in Sources */,
 				FC6A31C82B4D59CA00EB4B7B /* ExpenseTrackerApp.swift in Sources */,
+				FC6A31F42B4D62DA00EB4B7B /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
