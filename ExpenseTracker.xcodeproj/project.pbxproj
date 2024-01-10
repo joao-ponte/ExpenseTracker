@@ -15,6 +15,11 @@
 		FC6A31E32B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31E22B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift */; };
 		FC6A31E52B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31E42B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift */; };
 		FC6A31F42B4D62DA00EB4B7B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */; };
+		FC6A31F62B4D8F8700EB4B7B /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31F52B4D8F8700EB4B7B /* TransactionModel.swift */; };
+		FC6A31F82B4D903C00EB4B7B /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31F72B4D903C00EB4B7B /* PreviewData.swift */; };
+		FC6A31FC2B4D938E00EB4B7B /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */; };
+		FC6A32002B4DA5CC00EB4B7B /* TransactionModelMonzo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */; };
+		FC6A32032B4EAD1600EB4B7B /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = FC6A32022B4EAD1600EB4B7B /* SwiftUIFontIcon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,10 @@
 		FC6A31E22B4D59CE00EB4B7B /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		FC6A31E42B4D59CE00EB4B7B /* ExpenseTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		FC6A31F52B4D8F8700EB4B7B /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		FC6A31F72B4D903C00EB4B7B /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModelMonzo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6A32032B4EAD1600EB4B7B /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,9 @@
 			children = (
 				FC6A31C72B4D59CA00EB4B7B /* ExpenseTrackerApp.swift */,
 				FC6A31C92B4D59CA00EB4B7B /* ContentView.swift */,
+				FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */,
+				FC6A31F52B4D8F8700EB4B7B /* TransactionModel.swift */,
+				FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */,
 				FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */,
 				FC6A31CB2B4D59CD00EB4B7B /* Assets.xcassets */,
 				FC6A31CD2B4D59CD00EB4B7B /* Preview Content */,
@@ -109,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FC6A31CE2B4D59CD00EB4B7B /* Preview Assets.xcassets */,
+				FC6A31F72B4D903C00EB4B7B /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -146,6 +160,9 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				FC6A32022B4EAD1600EB4B7B /* SwiftUIFontIcon */,
+			);
 			productName = ExpenseTracker;
 			productReference = FC6A31C42B4D59CA00EB4B7B /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +235,9 @@
 				Base,
 			);
 			mainGroup = FC6A31BB2B4D59CA00EB4B7B;
+			packageReferences = (
+				FC6A32012B4EAD1600EB4B7B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
 			productRefGroup = FC6A31C52B4D59CA00EB4B7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6A31F82B4D903C00EB4B7B /* PreviewData.swift in Sources */,
+				FC6A31F62B4D8F8700EB4B7B /* TransactionModel.swift in Sources */,
 				FC6A31CA2B4D59CA00EB4B7B /* ContentView.swift in Sources */,
 				FC6A31C82B4D59CA00EB4B7B /* ExpenseTrackerApp.swift in Sources */,
+				FC6A31FC2B4D938E00EB4B7B /* TransactionRow.swift in Sources */,
+				FC6A32002B4DA5CC00EB4B7B /* TransactionModelMonzo.swift in Sources */,
 				FC6A31F42B4D62DA00EB4B7B /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC6A32012B4EAD1600EB4B7B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC6A32022B4EAD1600EB4B7B /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC6A32012B4EAD1600EB4B7B /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC6A31BC2B4D59CA00EB4B7B /* Project object */;
 }
