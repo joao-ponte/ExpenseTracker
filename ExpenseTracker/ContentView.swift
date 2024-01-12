@@ -16,6 +16,9 @@ struct ContentView: View {
                     Text("Overview")
                         .font(.title2)
                         .bold()
+                    
+                    //Mark: Transaction List
+                    RecentTransactionList()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -45,5 +48,6 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
         }
+        .environmentObject(TransactionListViewModel())
     }
 }

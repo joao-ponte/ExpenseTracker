@@ -19,7 +19,7 @@ struct TransactionRow: View {
                 .fill(AppColor.icon.opacity(0.3))
                 .frame(width: 44, height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .overlay {
-                    FontIcon.text(.awesome5Solid(code: .icons), fontsize: 24, color: AppColor.icon)
+                    FontIcon.text(.awesome5Solid(code: transaction.icon), fontsize: 24, color: AppColor.icon)
                 }
             
             VStackLayout(alignment: .leading, spacing: 6) {

@@ -33,8 +33,12 @@ struct RecentTransactionList: View {
             .padding(.top)
             
             //Mark: Recent Transaction List
-            ForEach(transactionListVM.transactions.prefix(5)) { transaction in
+            ForEach(Array(transactionListVM.transactions.prefix(5).enumerated()), 
+                    id: \.element) { index, transaction in
                 TransactionRow(transaction: transaction)
+                
+                Divider()
+                    .opacity(index == 4 ? 0 : 1)
             }
         }
         .padding()
@@ -49,11 +53,11 @@ struct RecentTransactionList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             RecentTransactionList()
-                .environmentObject(TransactionListViewModel())
             
             RecentTransactionList()
                 .preferredColorScheme(.dark)
-                .environmentObject(TransactionListViewModel())
+                
         }
+        .environmentObject(TransactionListViewModel())
     }
 }
