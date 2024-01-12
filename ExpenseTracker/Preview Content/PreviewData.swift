@@ -8,7 +8,7 @@
 import Foundation
 
 var transactionPreviewData = Transaction(id: 1,
-                                         date: "07/01/2024",
+                                         date: "01/07/2024",
                                          institution: "Monzo",
                                          account: "Visa Monzo",
                                          merchant: "Apple",

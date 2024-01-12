@@ -35,6 +35,14 @@ struct Transaction: Codable, Identifiable, Hashable {
         return type == TransactionType.credit.rawValue ? amount : -amount
     }
     
+    var formattedDate: String {
+        return date.formatDate(fromFormat: "MM/dd/yyyy", toFormat: "d MMM yyyy")
+    }
+    
+    var month: String {
+        return date.formatDate(fromFormat: "MM/dd/yyyy", toFormat: "MMMM")
+    }
+    
 }
 
 enum TransactionType: String {
@@ -87,7 +95,7 @@ extension Category {
         .shopping,
         .transfer
     ]
-
+    
     static let subCategories: [Category] = [
         .publicTransportation,
         .taxi,
@@ -103,7 +111,7 @@ extension Category {
         .software,
         .creditCardPayment
     ]
-
+    
     static let all: [Category] = categories + subCategories
 }
 
