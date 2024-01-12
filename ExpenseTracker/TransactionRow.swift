@@ -16,10 +16,10 @@ struct TransactionRow: View {
         HStackLayout(spacing: 20) {
             // Mark: Transaction Category Icon
             RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
-                .fill(Color.icon.opacity(0.3))
+                .fill(AppColor.icon.opacity(0.3))
                 .frame(width: 44, height: 44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .overlay {
-                    FontIcon.text(.awesome5Solid(code: .icons), fontsize: 24, color: Color.icon)
+                    FontIcon.text(.awesome5Solid(code: .icons), fontsize: 24, color: AppColor.icon)
                 }
             
             VStackLayout(alignment: .leading, spacing: 6) {
@@ -39,18 +39,23 @@ struct TransactionRow: View {
                     .font(.footnote)
                     .foregroundColor(.secondary)
             }
-            
             Spacer()
             
             // Mark: Transaction Date
             Text(transaction.signedAmount, format: .currency(code: "GBP"))
                 .bold()
-                .foregroundColor(transaction.type == TransactionType.credit.rawValue ? Color.text : .primary)
+                .foregroundColor(transaction.type == TransactionType.credit.rawValue ? AppColor.text : .primary)
         }
         .padding([.top, .bottom], 8)
     }
 }
 
-#Preview {
-    TransactionRow(transaction: transactionPreviewData)
+struct TransactionRow_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            TransactionRow(transaction: transactionPreviewData)
+            TransactionRow(transaction: transactionPreviewData)
+                .preferredColorScheme(.dark)
+        }
+    }
 }

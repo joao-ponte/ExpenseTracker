@@ -19,7 +19,9 @@
 		FC6A31F82B4D903C00EB4B7B /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31F72B4D903C00EB4B7B /* PreviewData.swift */; };
 		FC6A31FC2B4D938E00EB4B7B /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */; };
 		FC6A32002B4DA5CC00EB4B7B /* TransactionModelMonzo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */; };
-		FC6A32032B4EAD1600EB4B7B /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = FC6A32022B4EAD1600EB4B7B /* SwiftUIFontIcon */; };
+		FC6A32032B4EAD1600EB4B7B /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = FC6A32022B4EAD1600EB4B7B /* SwiftUIFontIcon */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FC6A32052B4EB16600EB4B7B /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6A32042B4EB16600EB4B7B /* TransactionListViewModel.swift */; };
+		FCD6834A2B514499000BD4B1 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD683492B514499000BD4B1 /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		FC6A31F72B4D903C00EB4B7B /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModelMonzo.swift; sourceTree = "<group>"; };
+		FC6A32042B4EB16600EB4B7B /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		FCD683492B514499000BD4B1 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				FC6A31C72B4D59CA00EB4B7B /* ExpenseTrackerApp.swift */,
 				FC6A31C92B4D59CA00EB4B7B /* ContentView.swift */,
 				FC6A31FB2B4D938E00EB4B7B /* TransactionRow.swift */,
+				FCD683492B514499000BD4B1 /* RecentTransactionList.swift */,
+				FC6A32042B4EB16600EB4B7B /* TransactionListViewModel.swift */,
 				FC6A31F52B4D8F8700EB4B7B /* TransactionModel.swift */,
 				FC6A31FF2B4DA5CC00EB4B7B /* TransactionModelMonzo.swift */,
 				FC6A31F32B4D62DA00EB4B7B /* AppColor.swift */,
@@ -286,7 +292,9 @@
 				FC6A31C82B4D59CA00EB4B7B /* ExpenseTrackerApp.swift in Sources */,
 				FC6A31FC2B4D938E00EB4B7B /* TransactionRow.swift in Sources */,
 				FC6A32002B4DA5CC00EB4B7B /* TransactionModelMonzo.swift in Sources */,
+				FCD6834A2B514499000BD4B1 /* RecentTransactionList.swift in Sources */,
 				FC6A31F42B4D62DA00EB4B7B /* AppColor.swift in Sources */,
+				FC6A32052B4EB16600EB4B7B /* TransactionListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
